@@ -278,6 +278,8 @@ After training, predictions can be generated for a new CSV file with:
 python src/predict_departure_delay.py --input path/to/new_flights.csv --output predictions_departure_delay.csv
 ```
 
+The required input columns are documented in [`docs/prediction_input_schema.md`](docs/prediction_input_schema.md).
+
 The prediction output includes:
 
 ```text
