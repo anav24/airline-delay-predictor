@@ -280,6 +280,8 @@ python src/predict_departure_delay.py --input path/to/new_flights.csv --output p
 
 The required input columns are documented in [`docs/prediction_input_schema.md`](docs/prediction_input_schema.md).
 
+A model card is also available at [`docs/model_card.md`](docs/model_card.md).
+
 The prediction output includes:
 
 ```text
