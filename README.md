@@ -178,11 +178,11 @@ Departure-delay March test result:
 
 ```text
 Model: HistGradientBoosting
-Threshold chosen on February: 0.41
-Accuracy:  0.9449
-Precision: 0.9063
-Recall:    0.8014
-F1:        0.8506
+Threshold chosen on February: 0.40
+Accuracy:  0.9452
+Precision: 0.9055
+Recall:    0.8043
+F1:        0.8519
 ROC-AUC:   0.9628
 ```
 
@@ -191,7 +191,7 @@ ROC-AUC:   0.9628
 | Model | Prediction Timing | Accuracy | Precision | Recall | F1 | ROC-AUC |
 |---|---|---:|---:|---:|---:|---:|
 | Scheduled-only HGB | Before departure | 0.3345 | 0.2040 | 0.8258 | 0.3271 | 0.5302 |
-| Departure-delay HGB | After departure / near takeoff | 0.9449 | 0.9063 | 0.8014 | 0.8506 | 0.9628 |
+| Departure-delay HGB | After departure / near takeoff | 0.9452 | 0.9055 | 0.8043 | 0.8519 | 0.9628 |
 
 The departure-delay model performed much better because actual departure delay is highly predictive of arrival delay.
 
@@ -272,10 +272,10 @@ The final model comparison showed that scheduled-only flight information had lim
 The final departure-delay model achieved:
 
 ```text
-Accuracy:  94.49%
-Precision: 90.63%
-Recall:    80.14%
-F1-score:  85.06%
+Accuracy:  94.52%
+Precision: 90.55%
+Recall:    80.43%
+F1-score:  85.19%
 ROC-AUC:   96.28%
 ```
 
