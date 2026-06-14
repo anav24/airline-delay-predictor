@@ -8,3 +8,5 @@ models/
 *.joblib
 *.parquet
 *.csv
+data/
+visuals/
