@@ -1,4 +1,4 @@
-﻿# Project Checklist
+# Project Checklist
 
 This checklist summarizes the current project status and what is intentionally kept local.
 

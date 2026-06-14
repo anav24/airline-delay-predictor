@@ -1,4 +1,4 @@
-﻿name: Project validation
+name: Project validation
 
 on:
   push:

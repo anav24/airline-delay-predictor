@@ -1,4 +1,4 @@
-﻿# Model Card: Airline Arrival Delay Predictor
+# Model Card: Airline Arrival Delay Predictor
 
 ## Model Overview
 

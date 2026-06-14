@@ -1,4 +1,4 @@
-﻿# Prediction Input Schema
+# Prediction Input Schema
 
 This document describes the required input columns for `src/predict_departure_delay.py`.
 
