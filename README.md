@@ -1,5 +1,8 @@
 # U.S. Airline Delay Prediction with Machine Learning
 
+![Project validation](https://github.com/anav24/airline-delay-predictor/actions/workflows/tests.yml/badge.svg)
+
+
 ## Project Overview
 
 This project uses U.S. domestic airline on-time performance data to predict whether a flight will arrive at least 15 minutes late. The project compares two different prediction settings:
