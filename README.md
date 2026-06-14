@@ -75,20 +75,20 @@ The exploratory analysis also showed that delay rates vary by airline, origin ai
 
 The project used several models:
 
-* DummyClassifier
-* Logistic Regression
-* Balanced Logistic Regression
-* Random Forest
-* HistGradientBoostingClassifier
+- DummyClassifier
+- Logistic Regression
+- Balanced Logistic Regression
+- Random Forest
+- HistGradientBoostingClassifier
 
 Evaluation metrics included:
 
-* Accuracy
-* Precision
-* Recall
-* F1-score
-* ROC-AUC
-* Confusion matrix
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC-AUC
+- Confusion matrix
 
 F1-score was emphasized because the dataset is imbalanced and the goal is to identify delayed flights, not simply predict the majority class.
 
@@ -188,10 +188,10 @@ ROC-AUC:   0.9628
 
 ## Model Comparison
 
-| Model               | Prediction Timing              | Accuracy | Precision | Recall |     F1 | ROC-AUC |
-| ------------------- | ------------------------------ | -------: | --------: | -----: | -----: | ------: |
-| Scheduled-only HGB  | Before departure               |   0.3345 |    0.2040 | 0.8258 | 0.3271 |  0.5302 |
-| Departure-delay HGB | After departure / near takeoff |   0.9449 |    0.9063 | 0.8014 | 0.8506 |  0.9628 |
+| Model | Prediction Timing | Accuracy | Precision | Recall | F1 | ROC-AUC |
+|---|---|---:|---:|---:|---:|---:|
+| Scheduled-only HGB | Before departure | 0.3345 | 0.2040 | 0.8258 | 0.3271 | 0.5302 |
+| Departure-delay HGB | After departure / near takeoff | 0.9449 | 0.9063 | 0.8014 | 0.8506 | 0.9628 |
 
 The departure-delay model performed much better because actual departure delay is highly predictive of arrival delay.
 
@@ -233,11 +233,11 @@ This project showed several important machine learning lessons:
 
 The scheduled-only model had weak future-month performance. It did not include important external signals such as:
 
-* Weather conditions
-* Airport congestion
-* Previous-leg aircraft delay
-* Air traffic control conditions
-* Real-time operational disruptions
+- Weather conditions
+- Airport congestion
+- Previous-leg aircraft delay
+- Air traffic control conditions
+- Real-time operational disruptions
 
 The departure-delay model performed much better, but it is not a true pre-departure prediction model because it uses information only available after the flight has already started departing.
 
@@ -245,14 +245,14 @@ The departure-delay model performed much better, but it is not a true pre-depart
 
 Possible future improvements include:
 
-* Add weather data by airport and date
-* Add airport congestion features
-* Add previous-flight or aircraft rotation delay features
-* Train on a full year of data
-* Compare XGBoost or LightGBM models
-* Build a small Streamlit dashboard for model results
-* Save the final model as a reusable pipeline
-* Create a prediction script for new flight records
+- Add weather data by airport and date
+- Add airport congestion features
+- Add previous-flight or aircraft rotation delay features
+- Train on a full year of data
+- Compare XGBoost or LightGBM models
+- Build a small Streamlit dashboard for model results
+- Save the final model as a reusable pipeline
+- Create a prediction script for new flight records
 
 ## Tools Used
 
