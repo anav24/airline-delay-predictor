@@ -282,6 +282,8 @@ The required input columns are documented in [`docs/prediction_input_schema.md`]
 
 A model card is also available at [`docs/model_card.md`](docs/model_card.md).
 
+A project completion checklist is available at [`docs/project_checklist.md`](docs/project_checklist.md).
+
 The prediction output includes:
 
 ```text
