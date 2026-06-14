@@ -4,8 +4,8 @@
 
 This project uses U.S. domestic airline on-time performance data to predict whether a flight will arrive at least 15 minutes late. The project compares two different prediction settings:
 
-1. **Scheduled-only prediction** — predicting arrival delay before the flight departs using scheduled flight information.
-2. **Departure-delay prediction** — predicting arrival delay after departure or near takeoff using actual departure-delay information.
+1. **Scheduled-only prediction** - predicting arrival delay before the flight departs using scheduled flight information.
+2. **Departure-delay prediction** - predicting arrival delay after departure or near takeoff using actual departure-delay information.
 
 The goal of the project is not only to build a high-performing model, but also to understand how prediction quality changes depending on what information is available at prediction time.
 
@@ -34,11 +34,10 @@ Cancelled and diverted flights were removed because they do not represent normal
 
 ```text
 airline-delay-predictor/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── .gitattributes
 ├── notebooks/
 │   ├── 01_exploration.ipynb
 │   ├── 02_baseline_model.ipynb
@@ -48,12 +47,14 @@ airline-delay-predictor/
 │   ├── 06_temporal_validation.ipynb
 │   ├── 07_departure_delay_model.ipynb
 │   └── 08_model_interpretation.ipynb
-│
-├── visuals/
+├── data/
+│   ├── raw/
+│   └── processed/
 ├── models/
-├── requirements.txt
-└── README.md
+└── visuals/
 ```
+
+Note: `data/`, `models/`, and `visuals/` are kept local and are not pushed to GitHub.
 
 ## Exploratory Analysis
 
