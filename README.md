@@ -254,6 +254,38 @@ Possible future improvements include:
 - Save the final model as a reusable pipeline
 - Create a prediction script for new flight records
 
+## Reproducible Scripts
+
+The final departure-delay model can be retrained from the local data files with:
+
+```text
+python src/train_final_departure_model.py
+```
+
+This script uses only the departure-delay modeling files:
+
+```text
+flights_2025_01_departure.csv
+flights_2025_02_departure.csv
+flights_2025_03_departure.csv
+```
+
+It saves the trained model and metrics locally under `models/`.
+
+After training, predictions can be generated for a new CSV file with:
+
+```text
+python src/predict_departure_delay.py --input path/to/new_flights.csv --output predictions_departure_delay.csv
+```
+
+The prediction output includes:
+
+```text
+delay_probability
+predicted_arrival_delay_15
+prediction_threshold
+```
+
 ## Tools Used
 
 ```text
